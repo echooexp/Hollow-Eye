@@ -169,7 +169,7 @@ VOID FilterModuleList(PVOID buffer) {
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/HollowEye.git
+git clone https://github.com/echooexp/Hollow-Eye.git
 cd HollowEye
 
 # 2. Open the solution
